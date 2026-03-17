@@ -92,7 +92,7 @@ cp .env.example .env
 ### 2. Start everything
 
 ```bash
-docker compose up --build
+docker compose -f docker-compose.prod.yml up --build
 ```
 
 This will:
