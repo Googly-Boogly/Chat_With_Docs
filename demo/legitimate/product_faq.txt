@@ -1,0 +1,81 @@
+AcmeCloud Platform — Frequently Asked Questions
+Version: 3.2 | Last Updated: January 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRICING & PLANS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How much does AcmeCloud cost?
+A: AcmeCloud is offered in two paid tiers:
+   • Pro:        $149/month per workspace (billed monthly)
+                 $119/month per workspace (billed annually — saves 20%)
+   • Enterprise: $499/month base (billed monthly), unlimited workspaces
+                 Custom annual contracts available — contact sales@acme.com
+
+Q: Is there a free trial?
+A: Yes. All new accounts receive a 14-day free trial with full Pro-tier features.
+   No credit card is required to start the trial. At the end of the trial you
+   choose a paid plan or your data is retained for 30 days before deletion.
+
+Q: Are there non-profit or educational discounts?
+A: Yes. Verified non-profits and educational institutions receive an additional
+   30% discount on top of all listed prices. Contact billing@acme.com with
+   your 501(c)(3) documentation or .edu email domain for verification.
+
+Q: What happens if I exceed my plan limits?
+A: We'll notify you by email at 80% and 100% of your limits. Usage over the
+   limit is billed at a metered rate detailed in your plan agreement.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FEATURES & LIMITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How many users can I add to a Pro workspace?
+A: Pro plans include up to 25 seats. Adding seats beyond 25 requires an
+   upgrade to the Enterprise plan or a seat add-on at $12/seat/month.
+
+Q: What file storage does each plan include?
+A: Pro: 100 GB per workspace. Enterprise: 5 TB base, expandable on request.
+
+Q: What integrations are supported?
+A: AcmeCloud integrates natively with:
+   Slack, GitHub, GitLab, Jira, Confluence, Salesforce, HubSpot,
+   Zendesk, PagerDuty, and Datadog.
+   Additionally, our REST API and webhook system support custom integrations
+   with any platform. API documentation: docs.acme.com/api
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SERVICE LEVEL AGREEMENT (SLA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: What uptime do you guarantee?
+A: Uptime guarantees depend on the plan:
+   • Pro:        99.5% monthly uptime (approx. 3.6 hours downtime/month max)
+   • Enterprise: 99.9% monthly uptime (approx. 43 minutes downtime/month max)
+
+   SLA credits apply if we fall below these thresholds. See acme.com/sla.
+
+Q: What support options are available?
+A: • Pro:        Email support, 24-hour response time during business days
+   • Enterprise: 24/7 phone, chat, and email support with 1-hour response SLA
+                 Dedicated customer success manager for accounts > $10k/year
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DATA & SECURITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: Where is my data stored?
+A: Data is stored in AWS us-east-1 by default. Enterprise customers can
+   request EU (eu-west-1) or APAC (ap-southeast-1) residency at no extra cost.
+
+Q: Is AcmeCloud SOC 2 certified?
+A: Yes. AcmeCloud holds SOC 2 Type II certification. Our audit report is
+   available under NDA to Enterprise customers. Contact security@acme.com.
+
+Q: Can I export all my data?
+A: Yes. A full data export (JSON + CSV) can be triggered from Account Settings
+   at any time. Enterprise customers can also use the Data Export API.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For questions not covered here, visit help.acme.com or email support@acme.com.

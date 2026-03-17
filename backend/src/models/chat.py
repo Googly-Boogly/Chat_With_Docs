@@ -2,6 +2,8 @@
 
 from pydantic import BaseModel, Field
 
+from src.utils.defense import ThreatReport  # re-exported for OpenAPI schema inclusion
+
 
 class ChatRequest(BaseModel):
     """Request body for POST /chat."""
@@ -10,13 +12,14 @@ class ChatRequest(BaseModel):
         min_length=1,
         description="The user's question to answer from the uploaded documents.",
     )
-
-
-class SourceReference(BaseModel):
-    """A single document source that contributed to an answer."""
-
-    filename: str = Field(description="Original filename of the source document.")
-    chunk_index: int = Field(description="Zero-based chunk index within the document.")
+    defense_mode: bool = Field(
+        False,
+        description=(
+            "Enable all three defense layers: injection pattern scanning, "
+            "source trust validation, and semantic anomaly detection. "
+            "Flagged chunks are excluded from LLM context before generation."
+        ),
+    )
 
 
 class ChatResponse(BaseModel):
@@ -27,3 +30,7 @@ class ChatResponse(BaseModel):
         description="Deduplicated list of source document filenames used to generate the answer."
     )
     chunks_used: int = Field(description="Number of document chunks passed as context to the LLM.")
+    threat_report: ThreatReport | None = Field(
+        None,
+        description="Defense analysis report. Populated only when defense_mode=True.",
+    )

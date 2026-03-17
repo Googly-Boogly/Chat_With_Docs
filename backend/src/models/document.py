@@ -16,6 +16,13 @@ class UploadResponse(BaseModel):
 
     files: list[str] = Field(description="Names of the files that were processed.")
     count: int = Field(description="Total number of chunks stored across all uploaded files.")
+    warnings: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Injection patterns detected at upload time (Layer 1 — Input Filtering). "
+            "Flagged documents are assigned a low trust score for query-time defense."
+        ),
+    )
 
 
 class DeleteResponse(BaseModel):

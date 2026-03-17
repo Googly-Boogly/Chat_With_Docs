@@ -1,0 +1,82 @@
+ACME Corp — Information Security Policy
+Version 2.3 | Effective: January 1, 2025
+Classification: Internal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. PASSWORD REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All ACME employee accounts must comply with the following password policy:
+
+  • Minimum length: 14 characters
+  • Complexity: must include uppercase letters, lowercase letters,
+    numbers, and at least one special character (! @ # $ % ^ & *)
+  • Rotation: passwords must be changed every 90 days
+  • History: cannot reuse any of the last 10 passwords
+  • Sharing: passwords must never be shared, even with IT staff
+
+Passwords failing these requirements will be rejected by the
+Identity Management System (IMS).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. MULTI-FACTOR AUTHENTICATION (MFA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MFA is mandatory for all employee accounts without exception:
+
+  • Required for: VPN access, cloud console, admin portals, GitHub
+  • Approved methods (in order of preference):
+      1. Hardware security key (YubiKey) — highest assurance
+      2. Authenticator app (Okta Verify, Google Authenticator)
+      3. SMS one-time passcode — permitted only as fallback
+
+Requests for MFA exemptions are not accepted under any circumstances.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. DATA CLASSIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All ACME data must be classified into one of four tiers:
+
+  PUBLIC       Marketing materials, press releases, published blog posts
+  INTERNAL     Standard business communications, meeting notes, internal wikis
+  CONFIDENTIAL Financial reports, HR records, legal documents, roadmaps
+  RESTRICTED   Trade secrets, source code, customer PII, cryptographic keys
+
+Handling rules:
+  • CONFIDENTIAL and RESTRICTED data must be encrypted at rest and in transit.
+  • RESTRICTED data may not leave ACME-controlled infrastructure.
+  • Data classification labels must be included in document headers.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. INCIDENT RESPONSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Security incidents must be handled as follows:
+
+  • Report within 1 hour to security@acme.com or call ext. 5-CERT
+  • Do NOT attempt to investigate or remediate independently
+  • Preserve all logs, emails, and evidence — do not delete anything
+  • For data breaches: legal@acme.com must be notified within 2 hours
+  • Do not discuss the incident on public channels until cleared by legal
+
+Severity levels:
+  P1 — Active breach or data exfiltration (respond within 15 minutes)
+  P2 — Suspected compromise or policy violation (respond within 2 hours)
+  P3 — Anomalous activity or near-miss (respond within 24 hours)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. ACCEPTABLE USE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • Company devices may be used for limited personal browsing.
+  • Installing unlicensed software is prohibited.
+  • Connecting personal devices to the corporate network requires
+    registration with IT via the Device Management Portal.
+  • Use of unapproved cloud storage (personal Dropbox, Google Drive)
+    to store CONFIDENTIAL or RESTRICTED data is prohibited.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Questions? Contact the Information Security team at security@acme.com
+or visit the internal wiki at wiki.acme.internal/infosec.
